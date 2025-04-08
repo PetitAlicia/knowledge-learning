@@ -1,0 +1,34 @@
+ul {
+    margin-top: 0.9375rem;
+    padding-left: 0rem;
+    list-style-type: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+li {
+    border: 0.125rem solid #c0c0c0;
+    border-radius: 0.5rem;
+    padding: 0.9375rem;
+    margin-bottom: 1.25rem;
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+strong {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #00497c;
+    text-transform: uppercase;
+    margin-bottom: 0.625rem;
+}
+
+hr {
+    color: #c0c0c0;
+}
+
+.ng-template {
+    text-align: center;
+}

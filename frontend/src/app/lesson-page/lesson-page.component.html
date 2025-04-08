@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<main>
+  <div *ngIf="isPurchased; else notPurchased">
+    <h1>{{ lesson.title }}</h1>
+  
+    <div class="lesson">
+      <h2>{{ lesson.description }}</h2>
+      <hr>
+
+      <ng-container *ngIf="lessonContent">
+        <div [innerHTML]="lessonContent"></div>
+      </ng-container>
+
+      <button *ngIf="isLessonCompleted" class="btn btn-success" disabled>
+        Vous avez déjà validé cette leçon
+      </button>
+
+      <button *ngIf="!isLessonCompleted" (click)="validateLesson()" class="btn btn-primary">
+        Valider la leçon
+      </button>
+    </div>
+  </div>
+  
+  <ng-template #notPurchased>
+    <h1>L'accès est interdit</h1>
+    <p class="ng-template">Vous devez acheter cette leçon pour y accéder.</p>
+  </ng-template>
+  
+</main>
+
+<app-footer></app-footer>

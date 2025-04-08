@@ -1,0 +1,21 @@
+<app-header></app-header>
+
+<main>
+  <h1>Mes certifications « Knowledge Learning »</h1>
+
+  <div>
+    <ul *ngIf="certifications.length > 0; else noCertifications">
+      <li *ngFor="let certification of certifications">
+        <strong>Certification « Knowledge Learning » en {{ certification.theme.name }}</strong>
+        <hr>
+        <p>Certifié le {{ certification.dateIssued | date:'dd/MM/yyyy' }}</p>
+      </li>
+    </ul>
+  </div>
+
+  <ng-template #noCertifications>
+    <p class="ng-template">Aucune certification n'a été trouvée.</p>
+  </ng-template>
+</main>
+
+<app-footer></app-footer>

@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+<main>
+  <h1>Les cursus et leçons</h1>
+
+  <div *ngFor="let course of courses" class="full-course">
+    <div class="theme">
+      <h2>Thème : {{ course.theme?.name }}</h2>
+      <hr>
+    </div>
+    
+    <!-- Courses -->
+    <div class="course">
+      <strong>{{ course.title }}</strong> - {{ course.price }}€
+      <div class="course-informations">
+        <span *ngIf="cursusCompletionStatus[course._id]">Cursus validé</span>
+
+        <button *ngIf="cursusCompletionStatus[course._id] || areAllLessonsPurchased(course._id)" class="btn btn-success" disabled>
+          Vous avez déjà acheté ce cursus
+        </button>
+        
+        <button *ngIf="!(cursusCompletionStatus[course._id] || areAllLessonsPurchased(course._id))" (click)="buyCourse(course)" class="btn btn-primary">
+          Acheter le cursus
+        </button>
+      </div>
+
+      <!-- Lessons -->
+      <ul class="lesson">
+        <li *ngFor="let lesson of getLessonsForCourse(course._id)" class="lesson-details">
+          <strong><a [routerLink]="['/lesson', lesson._id]">{{ lesson.title }}</a></strong> - 
+          {{ lesson.description }} - {{ lesson.price }}€
+          <div class="lesson-informations">
+            <span *ngIf="lessonStatus[lesson._id]">Leçon validée</span>
+
+            <button *ngIf="lessonPurchaseStatus[lesson._id] || cursusCompletionStatus[course._id]" class="btn btn-success" disabled>
+              Vous avez déjà acheté cette leçon
+            </button>
+            
+            <button *ngIf="!(lessonPurchaseStatus[lesson._id] || cursusCompletionStatus[course._id])" (click)="buyLesson(lesson)" class="btn btn-primary">
+              Acheter la leçon
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<app-footer></app-footer>

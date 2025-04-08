@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<main>
+  <h1>S'inscrire</h1>
+
+  <div class="form">
+    <form (ngSubmit)="register()">
+      <label>Nom</label>
+      <input type="text" [(ngModel)]="user.name" name="name" required />
+    
+      <label>Email</label>
+      <input type="email" [(ngModel)]="user.email" name="email" required />
+    
+      <label>Mot de passe</label>
+      <input type="password" [(ngModel)]="user.password" name="password" required />
+    
+      <button type="submit">S'inscrire</button>
+    </form>
+
+    <p *ngIf="successMessage" style="color: #82b864;">{{ successMessage }}</p>
+    <p *ngIf="errorMessage" style="color: #cd2c2e;">{{ errorMessage }}</p>
+
+    <p>
+      Vous avez déjà un compte ? <a [routerLink]="['/login']">Connectez-vous !</a>
+    </p>
+  </div>
+</main>
+
+<app-footer></app-footer>

@@ -1,0 +1,49 @@
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.75rem;
+
+    img {
+        width: 25rem;
+        height: auto;
+    }
+}
+
+figcaption {
+    color: #384050;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+a:link {
+    text-decoration: none;
+    color: #00497c;
+    display: inline-block;
+    font-weight: bold;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #00497c;
+    display: inline-block;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0074c7;
+    display: inline-block;
+    font-weight: bold;
+}
+
+a:active {
+    text-decoration: none;
+    color: #0074c7;
+    display: inline-block;
+    font-weight: bold;
+}

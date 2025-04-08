@@ -1,0 +1,84 @@
+.full-course {
+    border: 0.125rem solid #c0c0c0;
+    border-radius: 0.5rem;
+    padding: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.theme {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #384050;
+    margin-bottom: 0.625rem;
+    text-align: center;
+}
+
+.course {
+    padding: 0.625rem;
+}
+
+.lesson {
+    margin-top: 0.9375rem;
+    padding-left: 0rem;
+    list-style-type: none;
+}
+
+.lesson-details {
+    border: 0.0625rem dashed #969696;
+    border-radius: 0.3125rem;
+    padding: 0.5rem;
+    margin-top: 0.3125rem;
+    background-color: #f1f8fc;
+}
+
+hr {
+    color: #c0c0c0;
+}
+
+em, h2 {
+    color: #00497c;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-top: 0rem;
+}
+
+.course-informations, .lesson-informations {
+    margin-top: 0.625rem;
+}
+
+span {
+    padding-top: 0.1875rem;
+    padding-bottom: 0.1875rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    background-color: #82b864;
+    border-radius: 0.25rem;
+    margin-right: 0.625rem;
+}
+
+a:link {
+    text-decoration: none;
+    color: #00497c;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #00497c;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0074c7;
+}
+
+a:active {
+    text-decoration: none;
+    color: #0074c7;
+}

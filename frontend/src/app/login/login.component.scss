@@ -1,0 +1,63 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.125rem solid #c0c0c0;
+    border-radius: 0.5rem;
+    padding: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    background-color: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 0.3125rem;
+    font-weight: bold;
+}
+
+input {
+    padding-top: 0.1875rem;
+    padding-bottom: 0.1875rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin-right: 0.625rem;
+    margin-bottom: 0.9375rem;
+    width: 12.5rem;
+}
+
+p {
+    margin-top: 1.875rem;
+    margin-bottom: 0rem;
+    font-size: 1rem;
+}
+
+a:link {
+    text-decoration: none;
+    color: #00497c;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #00497c;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0074c7;
+}
+
+a:active {
+    text-decoration: none;
+    color: #0074c7;
+}
